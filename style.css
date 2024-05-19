@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f4f4f4;
+}
+
+  /* navbar */
+nav {
+  position: sticky;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 75px;
+  background: #3D8BFD;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+nav .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  max-width: 90%;
+  margin: auto;
+}
+
+nav .navbar .logo a {
+  color: #fff;
+  font-size: 27px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+nav .navbar .menu {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.navbar .menu li {
+  list-style: none;
+  margin: 0 15px;
+  position: relative;
+}
+
+.navbar .menu li a {
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+
+.navbar .menu li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  left: 0;
+  background: #fff;
+  transition: width 0.3s ease;
+}
+
+.navbar .menu li a:hover::after {
+  width: 100%;
+}
+
+nav .navbar .profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+      /* section */
+
+section.settings {
+  width: 90%;
+  padding: 60px;
+  background: #e9f5ff;
+  margin: 40px auto;
+  border: 2px solid #d0e7ff; 
+  border-radius: 10px; 
+}
+
+section.settings h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 40px;
+  text-align: left; 
+  padding-left: 13%; 
+}
+
+section.settings .settings-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+section.settings .card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section.settings .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+section.settings .card img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+section.settings .card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+section.settings .card p {
+  font-size: 14px;
+  color: #666;
+}
